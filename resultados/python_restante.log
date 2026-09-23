@@ -1,0 +1,22 @@
+[python/bubble] n=100000 run=1/3 -> 277614.73 ms
+[python/bubble] n=100000 run=2/3 -> 271605.73 ms
+[python/bubble] n=100000 run=3/3 -> 273844.35 ms
+  => resumo n=100000: media=274354.94ms min=271605.73ms max=277614.73ms desvio_padrao=3036.87ms
+[python/bubble] n=200000 run=1/5 -> 1146769.74 ms
+[python/bubble] n=200000 run=2/5 -> 1166939.41 ms
+[python/bubble] n=200000 run=3/5 -> 1129409.62 ms
+[python/bubble] n=200000 run=4/5 -> 1123891.78 ms
+[python/bubble] n=200000 run=5/5 -> 1125475.33 ms
+  => resumo n=200000: media=1138497.18ms min=1123891.78ms max=1166939.41ms desvio_padrao=18322.57ms
+[python/selection] n=100000 run=1/5 -> 115181.08 ms
+[python/selection] n=100000 run=2/5 -> 115131.42 ms
+[python/selection] n=100000 run=3/5 -> 114572.74 ms
+[python/selection] n=100000 run=4/5 -> 114577.34 ms
+[python/selection] n=100000 run=5/5 -> 115550.45 ms
+  => resumo n=100000: media=115002.61ms min=114572.74ms max=115550.45ms desvio_padrao=422.55ms
+[python/selection] n=200000 run=1/5 -> 475504.29 ms
+[python/selection] n=200000 run=2/5 -> 475492.49 ms
+[python/selection] n=200000 run=3/5 -> 478503.84 ms
+[python/selection] n=200000 run=4/5 -> 475435.31 ms
+[python/selection] n=200000 run=5/5 -> 474564.86 ms
+  => resumo n=200000: media=475900.16ms min=474564.86ms max=478503.84ms desvio_padrao=1508.41ms

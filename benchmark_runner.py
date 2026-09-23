@@ -28,6 +28,14 @@ COMMANDS = {
 }
 
 
+def compile_java():
+    java_dir = os.path.join(BASE_DIR, "java")
+    sources = [os.path.join(java_dir, f) for f in ("BubbleSort.java", "SelectionSort.java")]
+    result = subprocess.run(["javac"] + sources, capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(f"Falha ao compilar Java:\n{result.stderr}")
+
+
 def run_once(cmd, n):
     full_cmd = cmd + [str(n)]
     result = subprocess.run(full_cmd, capture_output=True, text=True)
@@ -44,6 +52,9 @@ def main():
     parser.add_argument("--repeats", type=int, default=5)
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
+
+    if args.lang == "java":
+        compile_java()
 
     cmd = COMMANDS[(args.lang, args.algo)]
     out_path = os.path.join(BASE_DIR, args.out) if not os.path.isabs(args.out) else args.out

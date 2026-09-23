@@ -29,5 +29,3 @@ Rodar o benchmark completo (grava no CSV e imprime média/min/max/desvio padrão
 python3 benchmark_runner.py --lang java   --algo bubble    --sizes 1000 10000 100000 200000 --out resultados/java_resultados.csv
 python3 benchmark_runner.py --lang python --algo selection --sizes 1000 10000               --out resultados/python_resultados.csv
 ```
-
-O script compila os `.java` automaticamente antes de rodar (não é preciso rodar `javac` manualmente).

@@ -1,11 +1,3 @@
-"""
-Selection Sort - implementacao canonica: para cada posicao i, varre o
-restante da lista procurando o menor elemento e faz no maximo uma troca
-por posicao. Numero de comparacoes: n*(n-1)/2 em qualquer caso.
-
-Uso: python3 selection_sort.py <n>
-Imprime em stdout apenas o tempo de ordenacao em milissegundos.
-"""
 import random
 import sys
 import time

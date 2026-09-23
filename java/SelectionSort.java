@@ -1,13 +1,5 @@
 import java.util.Random;
 
-/**
- * Selection Sort - implementacao canonica: para cada posicao i, varre o
- * restante do array procurando o menor elemento e faz no maximo uma troca
- * por posicao. Numero de comparacoes: n*(n-1)/2 em qualquer caso.
- *
- * Uso: java -cp java SelectionSort <n>
- * Imprime em stdout apenas o tempo de ordenacao em milissegundos.
- */
 public class SelectionSort {
 
     public static void sort(int[] arr) {

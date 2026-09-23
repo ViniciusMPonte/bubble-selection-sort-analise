@@ -1,13 +1,5 @@
 import java.util.Random;
 
-/**
- * Bubble Sort - implementacao canonica (sem otimizacao de parada antecipada),
- * para que o numero de comparacoes corresponda exatamente a analise
- * algoritmica de pior/medio caso: n*(n-1)/2 comparacoes sempre.
- *
- * Uso: java -cp java BubbleSort <n>
- * Imprime em stdout apenas o tempo de ordenacao em milissegundos.
- */
 public class BubbleSort {
 
     public static void sort(int[] arr) {
